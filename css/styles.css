@@ -11,7 +11,7 @@ h1 {
 
 body {
   font-family: 'Jura', sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   color: #FFF;
 }
 
@@ -29,64 +29,6 @@ body {
   width: 350px;
 }
 
-#hashtag{
-  text-align: right;
-  position: absolute;
-  z-index: 1000;
-  bottom: 10px;
-  right: 50px;
-}
-
-
-#about{
-  text-align: left;
-  position: absolute;
-  z-index: 1000;
-  top: 10px;
-  right: 50px;
-}
-
-#pics{
-  text-align: left;
-  position: absolute;
-  z-index: 1000;
-  top: 70px;
-  right: 50px;
-}
-
-#heart{
-  text-align: left;
-  position: absolute;
-  z-index: 1000;
-  top: 130px;
-  right: 50px;
-}
-
-#time{
-  text-align: left;
-  position: absolute;
-  z-index: 1000;
-  top: 200px;
-  right: 50px;
-}
-.button {
-  font-family: 'Jura';
-  text-align: left;
-  width:80%;
-  border-radius: 8px;
-  background-color: white;
-  border: 2px solid black;
-  color: black;
-  padding: 10px 10px;
-}
-
-.button:hover {
-  background-color: transparent;
-  border: 2px solid white;
-  color: white;
-  cursor: pointer;
-}
-
 #my-map {
   position: fixed;
   position: absolute;
@@ -95,6 +37,120 @@ body {
   right: 0;
   left: 0;
   bottom: 0;
+}
+
+/*****************/
+/* ICON   STYLES */
+/*****************/
+
+#people{
+  text-align: left;
+  position: absolute;
+  z-index: 1000;
+  top: 100px;
+  left: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+#people:hover {
+  cursor: pointer;
+}
+
+#buildings{
+  text-align: left;
+  position: absolute;
+  z-index: 1000;
+  top: 100px;
+  left: 100px;
+  color: white;
+  cursor: pointer;
+}
+
+#buildings:hover {
+  cursor: pointer;
+}
+
+#about{
+  text-align: left;
+  position: absolute;
+  z-index: 1000;
+  top: 10px;
+  right: 50px;
+  color: white;
+  cursor:pointer;
+}
+
+#about:hover {
+  cursor: pointer;
+}
+
+#pics{
+  text-align: left;
+  position: absolute;
+  z-index: 1000;
+  top: 60px;
+  right: 50px;
+  color: white;
+  cursor:pointer;
+}
+
+#pics:hover {
+  cursor: pointer;
+}
+
+#heart{
+  text-align: left;
+  position: absolute;
+  z-index: 1000;
+  top: 110px;
+  right: 50px;
+  color: white;
+  cursor:pointer;
+}
+
+#heart:hover {
+  cursor: pointer;
+}
+
+#time{
+  text-align: left;
+  position: absolute;
+  z-index: 1000;
+  top: 160px;
+  right: 50px;
+  color: white;
+}
+
+#time:hover {
+  cursor: pointer;
+}
+
+#hashtag{
+  text-align: right;
+  position: absolute;
+  z-index: 1000;
+  bottom: 10px;
+  right: 10px;
+}
+
+#hashtag:hover {
+  cursor: pointer;
+}
+
+/*****************/
+/* LEGEND STYLES */
+/*****************/
+
+#legend2 {
+  text-align: left;
+  position: absolute;
+  z-index: 1000;
+  bottom: 200px;
+  left: 50px;
+  width: 200px;
+  margin: 0;
+  padding: 0;
 }
 
 #legend {
@@ -107,10 +163,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/*****************/
-/* LEGEND STYLES */
-/*****************/
 
 .legendItem {
   display: inline-block;
@@ -153,3 +205,21 @@ body {
   border-color: #00BFFF;
   Opacity: 0.5;
 }
+
+/* .button {
+  font-family: 'Jura';
+  text-align: left;
+  width:80%;
+  border-radius: 8px;
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  padding: 10px 10px;
+}
+
+.button:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+} */

@@ -21,70 +21,122 @@
     <body >
 
       <div id='title'> <h1> The path of destruction of september 19th 2017 earthquake, Mexico City </h1></div>
-      <div id='hashtag'> <p style="font-family:Bungee; font-size:20px"> #FuerzaMexico</p></div>
+      <div id='hashtag'> <p style="font-family:Bungee; font-size:20px"> <a href="https://www.quora.com/Who-is-fuerza-Mexico"> #FuerzaMexico</a></p></div>
+
+<!-- ICON FOR PEOPLE -->
+        <i class="fas fa-male fa-3x"
+        data-toggle="tooltip" data-placement="left" title="Show number of deadths"
+        id='people';></i>
+
+<!-- ICON FOR BUILDINGS -->
+        <i class="fas fa-building fa-3x"
+        data-toggle="tooltip" data-placement="left" title="Show damage to buildings"
+        id='buildings';></i>
 
 <!-- ICON FOR ABOUT THIS MAP MODAL -->
-        <i class="fas fa-info-circle fa-3x"
+        <i class="fas fa-info-circle fa-2x"
         data-toggle="modal" data-target="#AboutModalLong"
         data-toggle="tooltip" data-placement="left" title="About this map"
-        id='about' style="color: white";></i>
+        id='about';></i>
 
 <!-- ICON FOR PICTURES MODAL -->
-        <i class="fas fa-images fa-3x"
+        <i class="fas fa-images fa-2x"
         data-toggle="modal" data-target="#PictureModalLong"
         data-toggle="tooltip" data-placement="left" title="Show me some pictures"
-        id='pics' style="color: white";></i>
+        id='pics';></i>
 
 <!-- ICON FOR SOURCES MODAL -->
-        <i class="fas fa-search fa-3x"
+        <i class="fas fa-asterisk fa-2x"
         data-toggle="modal" data-target="#SourcesModalLong"
         data-toggle="tooltip" data-placement="left" title="So... what's with the lake?"
-        id='time' style="color: white";></i>
+        id='time';></i>
 
 <!-- ICON FOR HELP MODAL -->
-        <i class="fas fa-heart fa-3x"
+        <i class="fas fa-heart fa-2x"
         data-toggle="modal" data-target="#HelpModalLong"
         data-toggle="tooltip" data-placement="left" title="Help!"
-        id='heart' style="color: white";></i>
+        id='heart';></i>
+
+<!-- Modal Start -->
+      <div class="modal fade" id="StartModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document" >
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: #87CEFA">
+              <h5 class="modal-title" id="exampleModalLongTitle">September 19, 2017</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:#FFF">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" >
+                <p class="h6" style="color:black">
+                On that day, a <span style="color:red"> 7.1 magnitude </span> earthquake shook Mexico City, rattling skyscrapers and sending millions into the streets.</br></br>
+                This is map shows more information of Mexico City's history with eartquakes.</br></br>
+                It shows the pattern of destruction of the disaster, and the <span style="color:red">discrepancy of information </span>between different official sources regarding the number of deaths.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
 <!-- Modal About -->
       <div class="modal fade" id="AboutModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
         <div class="modal-dialog" role="document" >
           <div class="modal-content">
             <div class="modal-header" style="background-color: #87CEFA">
-              <h5 class="modal-title" id="exampleModalLongTitle">About this map</h5>
+              <h5 class="modal-title" id="exampleModalLongTitle">The City and the earthquakes</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:#FFF">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body" >
               <p class="h6" style="color:black">
-                  Mexico is one of the world's most seismically active regions, sitting atop several intersecting tectonic plates. </br></br>
-                  Mexico City, itself, is exceptionally vulnerable to damage due to the fact that it is largely built on a dried lakebed. </br></br>
-                  According to the National Oceanic and Atmospheric Administration, "these soft sedimentary clay deposits amplified the seismic waves, or they liquefied, destroying the foundation of some buildings" during the 1985 quake.</br></br>
-                  A result of being built on a sinking lake bed, the city and its buildings <u> will always be </u> vulnerable to collapse.</br></br>
-                  For many citizens of the capital, September 19 has become a synonymous of disaster.</br></br>
-                  On 1985, two 8-magnitude earthquakes stroke the city causing serious damage to the Greater Mexico City area and the deaths of at least 5,000 people.</br></br>
-                  32 years after, the 1985 quake was commemorated, and a national earthquake drill was held, at 11 a.m. local time, just two hours before a 7.1-magnitude earthquake struck the city once again.</br></br>
 
-                  The toll of the 2017 earthquake in Mexico City is not as big as 32 years ago, but the damages are still important:</br>
-                  </br>
-                </p>
-                <ul style="color:black; font-size:15px">
-                  <li> Around 220 people where killed. </li>
-                  <li> At least 44 buildings collapsed in Mexico City due to the earthquake, trapping people inside, creating large plumes of dust, and starting fires. </li>
-                  <li> Between 50 to 60 people were rescued by emergency workers and citizens. </li>
-                  <li> Several buildings caught fire. Condesa, Roma and del Valle neighbourhoods were among those most affected.</li>
-                  <li> Mexico City International Airport suspended operations while damage assessments took place, but reopened at 4:00 p.m. CDT (2100 UTC). 180 flights were cancelled or diverted during the closure.</li>
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#quakes" data-toggle="tab">A Tale of Two Earthquakes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#zones" data-toggle="tab">Seismic zones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#damages" data-toggle="tab">The Damages</a>
+                  </li>
                 </ul>
-                  </br>
-                  </br>
-                  </br>
+
+                <div class="tab-content">
+                  <div class="tab-pane " id="zones" role="tabpanel">
+                    <p class="h6" style="color:black">
+                    </br>
+                      Mexico is one of the world's most seismically active regions, sitting atop several intersecting tectonic plates. </br></br>
+                      Mexico City, itself, is exceptionally vulnerable to damage due to the fact that it is largely built <span style="color:red">over a dried lakebed. </span></br></br>
+                      According to the National Oceanic and Atmospheric Administration, "these soft sedimentary clay deposits amplified the seismic waves, or they liquefied, destroying the foundation of some buildings" during the 1985 quake.</br></br>
+                      A result of being built on a sinking lake bed, the city and its buildings <span style="color:red"> will always be</span> vulnerable to collapse.</br></br>
+                    </p>
+                  </div>
+                  <div class="tab-pane active" id="quakes" role="tabpanel">
+                    <p class="h6" style="color:black">
+                    </br>
+                      For many citizens of the capital, September 19 has become a synonymous of disaster.</br></br>
+                      <span style="color:red">On 1985 </span> two 8-magnitude earthquakes stroke the city causing serious damage to the Greater Mexico City area and the deaths of at least 5,000 people.</br></br>
+                      32 years after <span style="color:red">On 2017 </span>, after the 1985 quake was commemorated and the traditional national earthquake drill was held, a 7.1-magnitude earthquake struck the city once again.</br></br>
+                    </p>
+                  </div>
+                  <div class="tab-pane" id="damages" role="tabpanel">
+                    <p class="h6" style="color:black">
+                    </br>
+                      The toll of the 2017 earthquake in Mexico City was not as severe as 32 years ago, but the damages are still important:</br>
+                      </br>
+                    </p>
+                    <ul class="fa-ul" style="color:black; font-size:15px">
+                      <li> <span class="fa-li"><i class="fas fa-dot-circle" style="color:#87CEFA"></i></span> Around 220 people where killed. </li>
+                      <li> <span class="fa-li"><i class="fas fa-dot-circle" style="color:#87CEFA"></i></span> At least 44 buildings collapsed in Mexico City due to the earthquake, trapping people inside, creating large plumes of dust, and starting fires. </li>
+                      <li> <span class="fa-li"><i class="fas fa-dot-circle" style="color:#87CEFA"></i></span> Between 50 to 60 people were rescued by emergency workers and citizens. </li>
+                      <li> <span class="fa-li"><i class="fas fa-dot-circle" style="color:#87CEFA"></i></span> Several buildings caught fire. Condesa, Roma and del Valle neighbourhoods were among those most affected.</li>
+                      <li> <span class="fa-li"><i class="fas fa-dot-circle" style="color:#87CEFA"></i></span> Mexico City International Airport suspended operations while damage assessments took place, but reopened at 4:00 p.m. CDT (2100 UTC). 180 flights were cancelled or diverted during the closure.</li>
+                    </ul>
+                  </div>
+                </div>
             </div>
-            <!-- <div class="modal-footer" style="background-color:black">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div> -->
           </div>
         </div>
       </div>
@@ -157,18 +209,14 @@
               <p class="h6" style="color:black">
                 </br>
                 During that day and the following weeks, Mexicans confronted scenes made out their worst nightmares.</br></br>
-                But across the capital, a surge of civic spirit took hold as thousands volunteered to provide medical care, food and water or to pick through buildings destroyed.</br></br>
+                But across the capital, <span style="color:red"> a surge of civic spirit</span> took hold as thousands volunteered to provide medical care, food and water or to pick through buildings destroyed.</br></br>
                </p>
             </div>
-            <!-- <div class="modal-footer" style="background-color:black">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div> -->
           </div>
         </div>
       </div>
 
-<!-- Modal History -->
+<!-- Modal Source -->
       <div class="modal fade" id="SourcesModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
         <div class="modal-dialog" role="document" >
           <div class="modal-content">
@@ -179,18 +227,18 @@
               </button>
             </div>
             <div class="modal-body" >
-              <p class="h6" style="color:black"></br>
+              <p class="h6" style="color:black; text-align:center">
                   <!-- Pictures: </br>
                   <a href="https://www.theatlantic.com/photo/2017/09/photos-of-the-earthquake-in-mexico-city/540417/"target="_blank"> The Atlantic </a>,</br>
                   <a href= "https://www.nytimes.com/interactive/2017/09/23/world/americas/mexico-city-earthquake-surveying-destruction-damage.html"> The New York Times. </a></br>
                    </br>
                   Other information: </br>
                   <a href= "https://www.huffingtonpost.com.mx/2017/09/23/terremoto-del-19-de-septiembre-1985-vs-2017_a_23220573/"> Huffington Post Mexico, </a></br> -->
-                  <a href="http://time.com/earthquake-mexico-city-photos/"> Time magazine, </a>
-                  <a href= "https://www.nexos.com.mx/?p=33707"> Nexos Magazine, </a>
-                  <a href= "https://www.animalpolitico.com/2017/11/sismos-septiembre-desastres-letales-siglo/"> Animal Politico, </a>
-                  <a href= "https://www.google.com/maps/d/u/0/viewer?mid=13-a8aEx6BcQXobiIGljWFWuUCMA&hl=en_US&ll=19.37785997197382%2C-99.15070127080776&z=14" > Google, <a/>
-                  <a href= "http://www.repsa.unam.mx/index.php/objetivosrepsa/investigacion-y-docencia/biblioteca-digital?showall=%2526start=3" > Repsa, <a/> &
+                  <a href="http://time.com/earthquake-mexico-city-photos/"> Time magazine, </a></br>
+                  <a href= "https://www.nexos.com.mx/?p=33707"> Nexos Magazine, </a></br>
+                  <a href= "https://www.animalpolitico.com/2017/11/sismos-septiembre-desastres-letales-siglo/"> Animal Politico, </a></br>
+                  <a href= "https://www.google.com/maps/d/u/0/viewer?mid=13-a8aEx6BcQXobiIGljWFWuUCMA&hl=en_US&ll=19.37785997197382%2C-99.15070127080776&z=14" > Google, <a/></br>
+                  <a href= "http://www.repsa.unam.mx/index.php/objetivosrepsa/investigacion-y-docencia/biblioteca-digital?showall=%2526start=3" > Repsa, <a/> &</br>
                   <a href= "http://www.atlasnacionalderiesgos.gob.mx/archivo/sismos.html"> Atlas Nacional de Riesgo </a>
               </p>
             </div>
@@ -210,19 +258,21 @@
             </div>
             <div class="modal-body" >
               <p class="h6" style="color:black">
-                There are many ways you can help victims of these and other earthquakes. </br> </br>
-                Here is a list of different organizations that help:</br></br>
+                There are many ways to help victims of this and other natural disasters. </br> </br>
+                <a href="http://howtohelp.mx/">Here is a list<a> of different organizations that help, or search directly for the following:</br></br>
               </p>
-              <ul style="color:black; font-size:15px">
-                <li> <a href="https://cruzrojadonaciones.org/mobile/"> Mexican Red Cross <a></li>
-                <li> <a href="http://www.topos.mx/">Topos <a></li>
-                <li> <a href="http://www.oxfammexico.org/dona">Oxfam México <a></li>
-                <li> <a href="http://cadena.ngo/dona">Cadena<a></li>
+              <ul class="fa-ul" style="color:black; font-size:15px">
+                <li> <span class="fa-li"><i class="fas fa-dot-circle" style="color:#87CEFA"></i></span><a href="https://cruzrojadonaciones.org/mobile/"> Mexican Red Cross<a>: Red Cross shelters, feeds and provides emotional support to victims of disasters; supplies about 40 percent of the nation's blood; teaches skills that save lives; provides international humanitarian aid; and supports military members and their families. </li>
+                <li> <span class="fa-li"><i class="fas fa-dot-circle" style="color:#87CEFA"></i></span><a href="http://www.topos.mx/">Topos volunteer rescuers<a>: An unpaid force of specialists, they work closely with firefighters and paramedics. They have earned a reputation worldwide, and have assisted after earthquakes in Japan (1995), Colombia (1999), Haiti (2010) and Nepal (2015), among others, and in Indonesia after the 2004 tsunami.</li>
+                <li> <span class="fa-li"><i class="fas fa-dot-circle" style="color:#87CEFA"></i></span><a href="https://www.oxfam.org/en/appeal/mexico-earthquake">Oxfam México<a>: Humanitarian experts team, has launched a Mexico earthquake appeal</li>
+                <li> <span class="fa-li"><i class="fas fa-dot-circle" style="color:#87CEFA"></i></span><a href="http://cadena.ngo/dona">Cadena<a>: The Committee for Disasters Relief and National Emergencies (CADENA), is a non-profit civic association focused on preventing nd assisting on emergencies and natural disasters. </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+
+
 
 <!-- Legend -->
       <div id='legend'>
@@ -230,8 +280,15 @@
         <p class='legendItem B'> Severe damage to structure</p>
         <p class='legendItem C'> Some damage to structure </p>
         <p class='legendItem D'> Former Texcoco Lake </p></br></br>
-        <p style='font-size: 80%'> Press Alt+Shift to draw a zoom box in an area of interest</p>
-        <p style='font-size: 80%'> Data from: <a href='https://www.google.com/maps/d/u/0/viewer?mid=13-a8aEx6BcQXobiIGljWFWuUCMA&hl=en_US&ll=19.37785997197382%2C-99.15070127080776&z=14'> Google </a> </p>
+      </div>
+
+      <div id="legend2">
+        <p> Number of deaths: </br>
+        1 <i class="fas fa-circle fa-xs" style= "color:#8B0000"></i>
+          <i class="fas fa-circle fa-sm" style= "color:#8B0000"></i>
+          <i class="fas fa-circle fa-lg" style= "color:#8B0000"></i>
+          <i class="fas fa-circle fa-2x" style= "color:#8B0000"></i>
+          <i class="fas fa-circle fa-3x" style= "color:#8B0000"></i> 30 +
       </div>
 
 <!-- map -->
@@ -241,8 +298,6 @@
       <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
-
 
     </body>
 
@@ -258,5 +313,6 @@
     <script src='data/lake_var.js'></script>
     <script src='data/zone_var.js'></script>
     <script src='data/cdmx_var.js'></script>
+    <script src='data/fallecidos_var.js'></script>
     <script src='js/map.js'></script>
 </html>
