@@ -1,0 +1,155 @@
+
+/*****************/
+/* GENERAL STYLES */
+/*****************/
+
+h1 {
+  font-family: 'Jura', sans-serif;
+  font-size: 20px;
+  color: #FFF;
+}
+
+body {
+  font-family: 'Jura', sans-serif;
+  font-size: 12px;
+  color: #FFF;
+}
+
+#picsize {
+  height:330px;
+  width:640px ;
+}
+
+#title {
+  text-align: left;
+  position: absolute;
+  z-index: 1000;
+  top: 10px;
+  left: 50px;
+  width: 350px;
+}
+
+#hashtag{
+  text-align: right;
+  position: absolute;
+  z-index: 1000;
+  bottom: 10px;
+  right: 50px;
+}
+
+
+#about{
+  text-align: left;
+  position: absolute;
+  z-index: 1000;
+  top: 10px;
+  right: 50px;
+}
+
+#pics{
+  text-align: left;
+  position: absolute;
+  z-index: 1000;
+  top: 70px;
+  right: 50px;
+}
+
+#heart{
+  text-align: left;
+  position: absolute;
+  z-index: 1000;
+  top: 130px;
+  right: 50px;
+}
+
+#time{
+  text-align: left;
+  position: absolute;
+  z-index: 1000;
+  top: 200px;
+  right: 50px;
+}
+.button {
+  font-family: 'Jura';
+  text-align: left;
+  width:80%;
+  border-radius: 8px;
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  padding: 10px 10px;
+}
+
+.button:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+#my-map {
+  position: fixed;
+  position: absolute;
+  margin-top: 0px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#legend {
+  text-align: left;
+  position: absolute;
+  z-index: 1000;
+  bottom: 10px;
+  left: 50px;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+}
+
+/*****************/
+/* LEGEND STYLES */
+/*****************/
+
+.legendItem {
+  display: inline-block;
+}
+
+.legendItem::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 7px;
+  height: 7px;
+  border: 2px solid ;
+}
+
+.A::before {
+  border-radius: 50%;
+  background-color: #DC143C;
+  border-color: #DC143C;
+  Opacity: 1;
+}
+
+.B::before {
+  border-radius: 50%;
+  background-color: #FF8C00;
+  border-color: #FF8C00;
+  Opacity: 1;
+}
+
+.C::before {
+  border-radius: 50%;
+  background-color: #FFD700;
+  border-color: #FFD700;
+  Opacity: 1;
+}
+
+.D::before {
+  border-radius: 0;
+  background-color: #00BFFF;
+  border-color: #00BFFF;
+  Opacity: 0.5;
+}
