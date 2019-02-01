@@ -5,7 +5,7 @@
 
 h1 {
   font-family: 'Jura', sans-serif;
-  font-size: 20px;
+  font-size: 30px;
   color: #FFF;
 }
 
@@ -142,18 +142,18 @@ body {
 /* LEGEND STYLES */
 /*****************/
 
-#legend2 {
+#legend {
   text-align: left;
   position: absolute;
   z-index: 1000;
   bottom: 200px;
-  left: 50px;
+  right: 50px;
   width: 200px;
   margin: 0;
   padding: 0;
 }
 
-#legend {
+#legend2 {
   text-align: left;
   position: absolute;
   z-index: 1000;
@@ -173,8 +173,8 @@ body {
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  width: 7px;
-  height: 7px;
+  width: 10px;
+  height: 10px;
   border: 2px solid ;
 }
 
